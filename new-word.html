@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang= "es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet"> 
+        <title>Ahorcado Alura</title>
+        <link rel="stylesheet" href="./styles/reset.css">
+        <link rel="stylesheet" href="./styles/styles.css">
+        <link rel="stylesheet" href="./styles/responsive.css">
+        <link rel="icon" href="./img/icon.jpg" type="image/x-icon">
+    </head>
+
+    <body>
+        <header>
+            <h1><img id="logoAlura" src="./img/logo-Alura.png" alt="Logo Alura"></h1>
+        </header>
+        <main class="espacios-contenidos">
+            <textarea id="ingresar-palabra" placeholder="Ingrese una palabra"></textarea>
+            <section id="botones-palabra">
+                <div class="espacio-errores">
+                    <p class="invisible" id="texto-con-numeros">No utilices numeros</p>
+                    <p class="invisible" id="mas-ocho">Ingresa menos de ocho letras</p>
+                    <p class="invisible" id="menos-uno">Ingresa tu palabra sin espacios</p>
+                    <p class="invisible" id="no-acentos">No utilices caracteres ni ascentos</p>
+                </div>
+
+                <div id="contenedor-alerta">
+                    <img class="img-alert" src="./img/alerta.svg" alt="Simbolo de alerta">
+                    <p class="text-alert">Máx. de 8 letras </p>
+                </div>
+
+                <button class="boton-azul" id="btn-guardar">Guardar y empezar</button>
+                <a href="./index.html"><button class="boton-claro" id="btn-cancelar">Cancelar</button></a>
+
+            </section>
+            
+            <script src="./js/nuevaPalabra.js"></script>
+
+        </main>
+
+    </body>
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="./js/dibujarJuego.js"></script>
+    <script src="./js/juego.js"></script>
+</html>
